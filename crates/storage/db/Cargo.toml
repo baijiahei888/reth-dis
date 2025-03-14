@@ -20,7 +20,7 @@ reth-metrics = { workspace = true }
 serde = { workspace = true, default-features = false }
 postcard = { version = "1.0.2", features = ["alloc"] }
 heapless = "0.7.16"
-parity-scale-codec = { version = "=3.4.0", features = ["bytes"] }
+parity-scale-codec = { version ="3.6.9", features = ["bytes"] }
 futures = { workspace = true }
 tokio-stream = { workspace = true }
 rand = { workspace = true }

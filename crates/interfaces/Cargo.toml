@@ -15,10 +15,6 @@ reth-network-api = { workspace = true }
 # TODO(onbjerg): We only need this for [BlockBody]
 reth-eth-wire = { path = "../net/eth-wire" }
 
-# eth
-revm-primitives = { workspace = true }
-parity-scale-codec = { version = "=3.4.0", features = ["bytes"] }
-
 # async
 async-trait = { workspace = true }
 futures = { workspace = true }

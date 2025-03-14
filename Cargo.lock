@@ -889,10 +889,8 @@ name = "codecs-derive"
 version = "0.1.0-alpha.4"
 dependencies = [
  "convert_case 0.6.0",
- "parity-scale-codec",
  "proc-macro2 1.0.66",
  "quote 1.0.31",
- "serde",
  "syn 2.0.32",
 ]
 
@@ -5347,7 +5345,6 @@ dependencies = [
  "futures",
  "hex-literal 0.3.4",
  "modular-bitfield",
- "parity-scale-codec",
  "parking_lot 0.12.1",
  "rand 0.8.5",
  "reth-codecs",
@@ -5356,7 +5353,6 @@ dependencies = [
  "reth-network-api",
  "reth-primitives",
  "reth-rpc-types",
- "revm-primitives",
  "secp256k1",
  "thiserror",
  "tokio",
@@ -5571,7 +5567,6 @@ dependencies = [
  "reth-rlp-derive",
  "revm-primitives",
  "ruint",
- "scale-info",
  "secp256k1",
  "serde",
  "serde_json",
@@ -6259,7 +6254,6 @@ version = "2.5.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "0cfdffd972d76b22f3d7f81c8be34b2296afd3a25e0a547bd9abe340a4dbbe97"
 dependencies = [
- "bitvec 1.0.1",
  "cfg-if",
  "derive_more",
  "parity-scale-codec",

@@ -25,10 +25,6 @@ quote.workspace = true
 syn = { version = "2.0", features = ["full"] }
 convert_case = "0.6.0"
 
-# codecs
-serde = { workspace = true, default-features = false }
-parity-scale-codec = { version = "=3.4.0", features = ["derive", "bytes"] }
-
 [features]
 default = ["compact"]
 compact = []

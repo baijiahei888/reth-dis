@@ -15,7 +15,7 @@ Helpers for working around NAT
 # nat
 public-ip = "0.2"
 ## fork of rust-igd with ipv6 support: https://github.com/sbstp/rust-igd/issues/47
-igd = { version="0.12.1" }
+igd = { version="0.12.1", features = ["aio"] }
 
 # misc
 tracing = { workspace = true }

@@ -57,7 +57,7 @@ resolver = "2"
 [workspace.package]
 version = "0.1.0-alpha.4"
 edition = "2021"
-rust-version = "1.70" # Remember to update .clippy.toml and README.md
+rust-version = "1.78.0" # Remember to update .clippy.toml and README.md
 license = "MIT OR Apache-2.0"
 homepage = "https://paradigmxyz.github.io/reth"
 repository = "https://github.com/paradigmxyz/reth"
@@ -102,10 +102,10 @@ reth-network = { path = "./crates/net/network" }
 reth-network-api = { path = "./crates/net/network-api" }
 
 ## eth
-ethers-core = { version = "2.0.8", default-features = false }
-ethers-providers = { version = "2.0.8", default-features = false }
-ethers-signers = { version = "2.0.8", default-features = false }
-ethers-middleware = { version = "2.0.8", default-features = false }
+ethers-core  = "=2.0.8"
+ethers-providers = "=2.0.8"
+ethers-signers = "=2.0.8"
+ethers-middleware = "=2.0.8"
 
 ## misc
 bytes = "1.4"
@@ -127,7 +127,7 @@ tokio = { version = "1.21", default-features = false }
 tokio-util = { version = "0.7.4", features = ["codec"] }
 
 ## async
-async-trait = "0.1.68"
+async-trait = "=0.1.68"
 futures = "0.3.26"
 pin-project = "1.0.12"
 futures-util = "0.3.25"

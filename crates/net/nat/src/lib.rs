@@ -237,8 +237,7 @@ impl Future for ResolveAny {
 }
 
 async fn resolve_external_ip_upnp() -> Option<IpAddr> {
-    search_gateway(Default::default())
-        .await
+    let ipv4 = search_gateway(Default::default()).await
         .map_err(|err| {
             debug!(target: "net::nat", ?err, "Failed to resolve external IP via UPnP: failed to find gateway");
             err
@@ -250,7 +249,9 @@ async fn resolve_external_ip_upnp() -> Option<IpAddr> {
             debug!(target: "net::nat", ?err, "Failed to resolve external IP via UPnP");
             err
         })
-        .ok()
+        .ok().unwrap();
+    return Option::from(IpAddr::V4(ipv4))
+
 }
 
 async fn resolve_external_ip() -> Option<IpAddr> {

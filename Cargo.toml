@@ -102,10 +102,10 @@ reth-network = { path = "./crates/net/network" }
 reth-network-api = { path = "./crates/net/network-api" }
 
 ## eth
-ethers-core  = "=2.0.8"
-ethers-providers = "=2.0.8"
-ethers-signers = "=2.0.8"
-ethers-middleware = "=2.0.8"
+ethers-core  = "2.0.8"
+ethers-providers = "2.0.8"
+ethers-signers = "2.0.8"
+ethers-middleware = "2.0.8"
 
 ## misc
 bytes = "1.4"
